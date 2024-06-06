@@ -141,7 +141,7 @@ class OnOffDevice:
             """Set transition in milliseconds."""
             if respect_throttle and transition_ms < self._throttle_ms:
                 transition_ms = self._throttle_ms
-            self._control_state.transition_seconds = transition_ms / 1000
+            self._control_state.transition_seconds = 0
 
         def set_transition_seconds(
             self, transition_seconds: float, respect_throttle: bool = False
