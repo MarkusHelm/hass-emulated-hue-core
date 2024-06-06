@@ -153,5 +153,5 @@ class EntertainmentAPI:
             y = float((light_data[5] * 256 + light_data[6]) / 65535)
             call.set_xy(x, y)
             call.set_brightness(int((light_data[7] * 256 + light_data[8]) / 256))
-        call.set_transition_ms(0, respect_throttle=False)
+        call.set_transition_ms(0, respect_throttle=True)
         await call.async_execute()
