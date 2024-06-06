@@ -3,7 +3,7 @@
 # Prevent overloading home assistant / implementation
 # Will not be respected when using udp
 DEFAULT_THROTTLE_MS = 150
-BRIGHTNESS_THROTTLE_THRESHOLD = 255 / 4
+BRIGHTNESS_THROTTLE_THRESHOLD = 0
 ENTERTAINMENT_UPDATE_STATE_UPDATE_RATE = 1000
 
 CONFIG_WRITE_DELAY_SECONDS = 10
